@@ -10,6 +10,7 @@ from flask import jsonify
 from flask import request
 import json
 import random
+import os
 
 mysql = MySQL()
 app = Flask(__name__)
