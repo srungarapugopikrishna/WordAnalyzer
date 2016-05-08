@@ -4,7 +4,7 @@ from wtforms import TextField, TextAreaField, SubmitField
 from wtforms.validators import Required
 
 from flask import Flask
-from flask.ext.mysql import MySQL
+from flaskext.mysql import MySQL
 from flask import render_template
 from flask import jsonify
 from flask import request
