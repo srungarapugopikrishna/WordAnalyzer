@@ -20,18 +20,12 @@ app.config['MYSQL_DATABASE_DB'] = 'wn_pro_mysql'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
-
-if __name__ == '__main__':
-    # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
-
 # @app.route("/")
 # def one_html():
 # 	return render_template("Bar_Chat.html", title = 'Projects')@app.route("/")
 @app.route("/test")
 def test():
-	return {"hello":"dear"}
+	return jsonify({"hello":"dear"})
 
 @app.route("/")
 def one_html():
@@ -129,4 +123,5 @@ def my_form_post():
 	return jsonify(elementsSet) 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host="0.0.0.0",port=port,debug=True)
