@@ -22,6 +22,10 @@ mysql.init_app(app)
 # @app.route("/")
 # def one_html():
 # 	return render_template("Bar_Chat.html", title = 'Projects')@app.route("/")
+@app.route("/test")
+def test():
+	return {"hello":"dear"}
+
 @app.route("/")
 def one_html():
 	return render_template("Bar_Chat.html", title = 'Projects')
