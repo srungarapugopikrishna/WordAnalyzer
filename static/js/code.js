@@ -3,7 +3,7 @@
 
   function myFunction(){
   text = document.getElementById("box").value;
-  var myUrl = "http://localhost:5000/abcd";
+  var myUrl = document.location.protocol+"//"+document.location.host+"/abcd";
   console.log('here');
  // text ='start'
  //alert("myFunct"+text);

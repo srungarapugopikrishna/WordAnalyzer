@@ -93,7 +93,7 @@
 </div>
 
 <script>
-var myUrl = "http://localhost:5000/word_count";
+var myUrl = document.location.protocol+"//"+document.location.host+"/word_count";
     $.getJSON(myUrl, function (jsonData) {
             console.log(jsonData, "test");
             
