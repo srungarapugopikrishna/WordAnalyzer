@@ -1,0 +1,4 @@
+flask==0.10.1
+flask-mysqldb==0.2.0
+wtforms==2.1
+flask.ext.wtf==0.12
